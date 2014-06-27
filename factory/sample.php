@@ -1,5 +1,5 @@
 <?php
-require("animal_factory.php");
+require_once "animal_factory.php";
 
 // set mammal data
 $mammal_data = array(
@@ -17,7 +17,7 @@ $reptile_data = array(
 $mammal = AnimalFactory::create(AnimalFactory::TYPE_MAMMAL, $mammal_data);
 
 // create a Reptile instance using the factory
-$mammal = AnimalFactory::create(AnimalFactory::TYPE_REPTILE, $reptile_data);
+$reptile = AnimalFactory::create(AnimalFactory::TYPE_REPTILE, $reptile_data);
 
 // check if instance Mammal was created
 if ($mammal instanceof Mammal) {
@@ -25,6 +25,6 @@ if ($mammal instanceof Mammal) {
 }
 
 // check if instance Mammal was created
-if ($mammal instanceof Reptile) {
-    echo "Reptile : ".$mammal->getName()."<br>";
+if ($reptile instanceof Reptile) {
+    echo "Reptile : ".$reptile->getName()."<br>";
 }

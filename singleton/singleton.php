@@ -3,6 +3,7 @@ class Singleton
 {
     /**
      * Storage of the single instance
+     * The value stays until the request is finished
      *
      * @var $instance
      */

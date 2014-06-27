@@ -1,5 +1,5 @@
 <?php
-require("animal.php");
+require_once 'animal.php';
 
 class AnimalFactory
 {
